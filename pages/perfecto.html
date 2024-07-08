@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Perfecto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c6fbdf; /* Color de fondo para toda la página */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:·#80a692;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00070c; /* Color del encabezado */
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #09f829; /* Color del botón */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218c53; /* Color del botón al pasar el ratón */
+        }
+
+        #resp {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Números Perfectos</h1>
+
+        <form>
+            <label for="num">Ingrese un número:</label>
+            <input type="number" id="num" placeholder="Ingrese un número">
+
+            <button type="button" onclick="number.Perfecto()">Verificar</button>
+            <button  class="boton">limpiar</button>
+
+
+        </form>
+
+        <p id="resp"></p>
+        <button onclick="window.history.back()" class="boton">regresar</button>
+
+    </div>
+
+    <script src="../js/numero.js"></script>
+</body>
+</html>
+
+

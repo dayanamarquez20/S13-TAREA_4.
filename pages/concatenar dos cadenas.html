@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+    <link rel="stylesheet" href="../../css/estilosformularios.css">
+    <style>
+       /* estilosformularios.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    text-align: center;
+    background-color: #554d4d;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.botones {
+    text-align: center;
+}
+
+.boton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.boton.draw-border {
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+}
+
+#resp {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+    </style>   
+</head>
+<body>
+    <header>
+    <h1>Concatenar</h1>
+    </header>
+    <main>
+    <section class="container">
+    <form action="">
+    <label for="num">
+    <input type="text" id="palabra" value="" placeholder="Ingrese frase">
+    </label>
+    <label for="num">
+        <input type="text" id="frase" value="" placeholder="Ingrese frase que va a unir">
+        </label>
+        <div class="botones">
+            <button type="button" class="boton draw-border" onClick="cad.concatenar()">Aceptar</button>
+            <button type="reset" class="boton draw-border" >Limpiar</button>
+
+        </div>
+            <br>
+            <div id="resp">
+                Respuesta:
+            </div>
+            </form>
+        </section>      
+    </main>
+   
+    <script src="../js/cadenasYarreglo.js" ></script>
+</body>
+</html>

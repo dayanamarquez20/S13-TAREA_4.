@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Subcadena</title>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #c18e30;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: #2c592e;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+</head>
+<body>
+
+  <h2>Eliminar Subcadena</h2>
+
+  <label for="cadenaOriginal">Cadena Original:</label>
+  <input type="text" id="cadenaOriginal" placeholder="Ingrese la cadena original">
+
+  <label for="subcadenaEliminar">Subcadena a Eliminar:</label>
+  <input type="text" id="subcadenaEliminar" placeholder="Ingrese la subcadena a eliminar">
+
+  <button onclick="cad.eliminarSubcadena()">Eliminar Subcadena</button>
+
+  <p id="resultado"></p>
+  <script src="../js/cadenasYarreglo.js" ></script>
+
+</body>
+</html>
+
+    

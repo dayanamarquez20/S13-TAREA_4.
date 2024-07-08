@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base 10 a Base 8</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcaca; /* Color de fondo */
+}
+
+header {
+    background-color: rgb(244, 146, 146); /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.boton {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #948cbd; /* Azul brillante */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#resp {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Base 10 a Base 8</h1>
+    </header>
+    <main>
+        <section class="container">
+            <form action="">
+                <label for="datos">
+                    <input type="number" id="datos" placeholder="Ingrese número base 10">
+                </label>
+                <div class="botones">
+                    <button type="button" class="boton" onClick="arr.Base10_8()">Convertir a Base 8</button>
+                    <button type="reset" class="boton">Limpiar</button>
+                    <a class="boton" href="javascript:history.back()">Regresar</a>
+                </div>
+                <div id="resp">
+                    Aquí va a ir la respuesta
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="../js/base.js"></script>
+</body>
+</html>
+
+

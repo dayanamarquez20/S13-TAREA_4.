@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5f5;
+    display: flex;
+    height: 100vh;
+    flex-direction: column; /* Asegura que el contenido esté en una columna */
+}
+
+header {
+    background-color: #91dddc;
+    color: rgb(245, 240, 240);
+    padding: 10px;
+    border-bottom: 2px solid #eadcdc;
+    text-align: center;
+    width: 100%;
+    flex: 1; /* Hace que el header ocupe el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #91dddc;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #244568;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #97c8fd;
+}
+
+#resp {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Base 10 a Base 2</h1>
+    </header>
+    <main>
+        <section class="container">
+          <form action="">
+             <label for="">
+                <input type="number" id="datos"placeholder="ingrese numero base10">
+             </label>
+             <div class="botones">
+                 <button type="button" class="boton" onClick="arr.Base10_2()">Aceptar</button>
+                 <button type="reset" class="boton" >Limpiar</button>
+                 <a class="boton" href="javascript:history.back()">Regresar</a>
+             </div>
+             <div id="resp">
+                aqui va a ir la respuesta
+             </div>
+          </form>
+ 
+        </section>
+      
+    </main>
+   
+    <script src="../js/base.js" ></script>
+</body>
+</html>

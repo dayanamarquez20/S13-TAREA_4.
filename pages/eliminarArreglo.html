@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar de un Arreglo</title>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #e1c6c6; /* Color de fondo más claro */
+    }
+
+    h2 {
+        color: #333; /* Color de texto más oscuro */
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #555; /* Color de texto más oscuro */
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        color: #333; /* Color de texto más oscuro */
+    }
+
+    button {
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: #323059; /* Color de fondo del botón */
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333; /* Color de texto más oscuro */
+    }
+</style>
+
+</head>
+<body>
+
+  <h2>Eliminar Arreglo</h2>
+
+  <label for="arreglo">Arreglo Actual (separados por comas):</label>
+  <input type="text" id="arregloInput" placeholder="Ejemplo: 2, 4, 10">
+
+  <label for="elementoEliminar">Elemento a Eliminar:</label>
+  <input type="number" id="elementoEliminar" placeholder="Ingrese el elemento a eliminar">
+
+  <button onclick="cad.eliminarDeArreglo()">Eliminar</button>
+
+  <p id="resultado"></p>
+
+  <script src="../js/cadenasYarreglo.js"></script>
+</body>
+</html>
